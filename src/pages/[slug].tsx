@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-import About from "../pageComponents/About";
-import Events from "../pageComponents/Events";
+import About from "../PageComponents/About/About";
+import Events from "../PageComponents/Events/MainEvent";
 
 const Page = ({ token, path, dataValues }: any) => {
   switch (path) {

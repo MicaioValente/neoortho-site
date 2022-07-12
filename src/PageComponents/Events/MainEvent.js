@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import MainEvent from "./MainEvent";
+import MainEvent from "./MainEvent/index";
 import Posts from "../../components/Posts";
 
 import { eventsData } from "../../mocks/data";
