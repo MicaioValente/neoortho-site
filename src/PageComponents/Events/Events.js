@@ -22,8 +22,9 @@ const Events = ({ token, dataValues }) => {
 
       <MainEvent
         token={token}
-        post={eventsData?.posts[0]}
+        post={eventsData?.posts}
       />
+
       <Posts
         id="events"
         token={token}

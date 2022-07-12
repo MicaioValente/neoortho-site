@@ -47,7 +47,6 @@ export const getStaticProps = async (props: any) => {
 
     if (res.status === 200) {
       const { token } = await res.data;
-      console.log(token);
 
       return {
         props: {
@@ -57,7 +56,6 @@ export const getStaticProps = async (props: any) => {
         },
         revalidate: 120
       }
-
     }
 
     console.log('Network response was not ok.');

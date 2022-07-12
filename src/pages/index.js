@@ -36,12 +36,10 @@ export default function Home({ token, res }) {
         image={presentationData1?.image}
         cards={presentationData1?.cards}
         maxWidth
-        home={false}
       />
       <Policies
         title={policiesData?.title}
         cards={policiesData?.cards}
-        home={true}
       />
       <Certificates
         cards={certificatesData?.cards}
@@ -52,7 +50,6 @@ export default function Home({ token, res }) {
         cards={presentationData2?.cards}
         maxWidth
         imageLeft
-        home={true}
       />
     </>
   )
@@ -76,7 +73,6 @@ export const getStaticProps = async () => {
 
     if (res.status === 200) {
       const { token } = await res.data;
-      console.log(token);
 
       return {
         props: {
@@ -84,7 +80,6 @@ export const getStaticProps = async () => {
         },
         revalidate: 120
       }
-
     }
 
     console.log('Network response was not ok.');

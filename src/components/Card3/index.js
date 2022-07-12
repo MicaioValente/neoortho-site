@@ -4,12 +4,12 @@ import { H3 } from "../H3";
 import { Paragraph } from "../Paragraph";
 import IconFrame from "../IconFrame";
 
-const Card3 = ({ title, text, src, home }) => {
+const Card3 = ({ title, text, src }) => {
   return (
     <Container>
       <div className="texts">
         <H3>{title}</H3>
-        <Paragraph style={{ color: '#0c0' }}>{text}</Paragraph>
+        <Paragraph>{text}</Paragraph>
       </div>
       <IconFrame src={src} />
     </Container>

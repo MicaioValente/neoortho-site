@@ -14,11 +14,14 @@ const Posts = ({ posts, id, token }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    (async () => {
-      const events = await getEvents(token);
-      setData(events);
-    })()
-  }, [token])
+    // (async () => {
+    //   const events = await getEvents(token);
+    //   setData(events);
+    // })()
+
+    setData(posts);
+
+  }, [token, posts])
 
   return (
     <Container id={id}>

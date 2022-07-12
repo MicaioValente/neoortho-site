@@ -12,11 +12,14 @@ const MainEvent = ({ token, post }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    (async () => {
-      const events = await getEvents(token);
-      setData(events);
-    })()
-  }, [token])
+    // (async () => {
+    //   const events = await getEvents(token);
+    //   setData(events);
+    // })()
+
+    setData(post)
+
+  }, [token, post])
 
   return (
     <Container>

@@ -4,7 +4,7 @@ import Card3 from "../Card3";
 import { H2 } from "../H2";
 import { Paragraph } from "../Paragraph";
 
-const Policies = ({ title, paragraph, cards, home }) => {
+const Policies = ({ title, paragraph, cards }) => {
   return (
     <Container>
       <H2>{title}</H2>
@@ -15,7 +15,7 @@ const Policies = ({ title, paragraph, cards, home }) => {
 
       <Cards>
         {cards.map(({ title, text, icon }, index) => (
-          <Card3 home={home} key={index} title={title} text={text} src={icon} />
+          <Card3 key={index} title={title} text={text} src={icon} />
         ))}
       </Cards>
     </Container>
