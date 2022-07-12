@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 import Head from '../components/Head'
-import Categories from '../PageComponents/Home/Categories/Home'
+import Categories from '../pageComponents/Home/Categories'
 import Posts from '../components/Posts'
 
 import Banner from '../components/Banner'
@@ -11,7 +11,7 @@ import Presentation from '../components/presentation'
 
 import { presentationData1, presentationData2, policiesData, certificatesData, categoriesData, bannerData, headData, eventsHomeData } from '../mocks/data'
 
-export default function Home({ token, res }: any) {
+export default function Home({ token, res }) {
 
   return (
     <>
@@ -91,7 +91,7 @@ export const getStaticProps = async () => {
       }
     }
 
-  } catch (error: any) {
+  } catch (error) {
     console.log(`There has been a problem with your fetch operation: ${error.message}`);
     return {
       props: {
