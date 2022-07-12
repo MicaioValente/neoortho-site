@@ -41,6 +41,7 @@ const About = ({ dataValues }) => {
         squareSize="200"
       />
       <Policies
+        home={false}
         title={policiesAboutData?.title}
         paragraph={policiesAboutData?.paragraph}
         cards={policiesAboutData?.cards}

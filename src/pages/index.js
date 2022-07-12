@@ -36,10 +36,12 @@ export default function Home({ token, res }) {
         image={presentationData1?.image}
         cards={presentationData1?.cards}
         maxWidth
+        home={false}
       />
       <Policies
         title={policiesData?.title}
         cards={policiesData?.cards}
+        home={true}
       />
       <Certificates
         cards={certificatesData?.cards}
@@ -50,6 +52,7 @@ export default function Home({ token, res }) {
         cards={presentationData2?.cards}
         maxWidth
         imageLeft
+        home={true}
       />
     </>
   )

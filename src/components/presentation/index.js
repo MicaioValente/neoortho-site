@@ -6,7 +6,7 @@ import { Paragraph } from "../Paragraph";
 import Card2 from "../Card2";
 import ImageFrame from "../ImageFrame";
 
-const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, imageLeft }) => {
+const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, imageLeft, home }) => {
   return (
     <Container>
       {title && (
@@ -26,6 +26,8 @@ const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, im
               text={text}
               link={link}
               href={href}
+
+              home={home}
               maxWidth={maxWidth} />
           ))}
         </Texts>
