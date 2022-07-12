@@ -11,7 +11,7 @@ import Presentation from '../components/presentation'
 
 import { presentationData1, presentationData2, policiesData, certificatesData, categoriesData, bannerData, headData, eventsHomeData } from '../mocks/data'
 
-export default function Home({ token, res }) {
+export default function Home({ token, res }: any) {
 
   return (
     <>
@@ -91,7 +91,7 @@ export const getStaticProps = async () => {
       }
     }
 
-  } catch (error) {
+  } catch (error: any) {
     console.log(`There has been a problem with your fetch operation: ${error.message}`);
     return {
       props: {

@@ -6,7 +6,7 @@ import { Paragraph } from "../Paragraph";
 import Card2 from "../Card2";
 import ImageFrame from "../ImageFrame";
 
-const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, imageLeft }) => {
+const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, imageLeft }: any) => {
   return (
     <Container>
       {title && (
@@ -19,7 +19,7 @@ const Presentation = ({ title, paragraph, cards, image, squareSize, maxWidth, im
 
       <div className={imageLeft && "image-left"}>
         <Texts>
-          {cards.map(({ title, text, link, href }, index) => (
+          {cards.map(({ title, text, link, href }: any, index: any) => (
             <Card2
               key={index}
               title={title}

@@ -9,7 +9,7 @@ import { getEvents } from "../../services/home";
 import dayOfMonth from "../../utils/dayOfMonth";
 import getHours from "../../utils/getHours";
 
-const Posts = ({ posts, id, token }) => {
+const Posts = ({ posts, id, token }: any) => {
 
   const [data, setData] = useState([]);
 
@@ -23,7 +23,7 @@ const Posts = ({ posts, id, token }) => {
   return (
     <Container id={id}>
       <div>
-        {data?.map(({ events }, index) => (
+        {data?.map(({ events }: any, index: any) => (
           (id !== 'events') ? (
             (index < 3) && (
               <Post

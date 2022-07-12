@@ -5,7 +5,7 @@ import { Paragraph } from "../Paragraph";
 
 import Card4 from "../Card4";
 
-const Certificates = ({ title, paragraph, cards }) => {
+const Certificates = ({ title, paragraph, cards }: any) => {
   return (
     <Container>
 
@@ -18,7 +18,7 @@ const Certificates = ({ title, paragraph, cards }) => {
       )}
 
       <Cards>
-        {cards.map(({ title, text, icons }, index) => (
+        {cards.map(({ title, text, icons }: any, index: any) => (
           <Card4 key={index} title={title} text={text} icons={icons} />
         ))}
       </Cards>
