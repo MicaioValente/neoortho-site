@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 import Head from '../components/Head'
-import Categories from '../pageComponents/Home/Categories'
+import Categories from '../PageComponents/Home/Categories/Categories'
 import Posts from '../components/Posts'
 
 import Banner from '../components/Banner'
