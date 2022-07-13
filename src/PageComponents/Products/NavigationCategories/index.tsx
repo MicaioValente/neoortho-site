@@ -132,8 +132,9 @@ const NavigationCategories = () => {
                             })}
                         </S.ContainerCategorias>
                         {SubCategoriesComponent()}
-
-                        <Carousel />
+                        <S.ContainerCarrousel>
+                            <Carousel />
+                        </S.ContainerCarrousel>
                     </S.Categories>
                 </S.Row>
             </S.Container >

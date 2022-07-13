@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./_app.css"
+import 'antd/dist/antd.css'
 
 import GlobalStyle from '../styles/globalstyles'
 import theme from '../styles/theme'

@@ -77,3 +77,7 @@ export const Paragraph = styled.p`
     font-size: ${({ theme }) => theme.typography.sizes[1]};
     color: ${({ theme }) => theme.colors.primary};
 `
+
+export const ContainerCarrousel = styled.div`
+    width: 1200px;
+`
